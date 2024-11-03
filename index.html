@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="3D Urban Scene Understanding with Vision-Language Models">
+  <meta name="keywords" content="OpenCity3D, 3D Scene Understanding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenCity3D 🏙️</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!--<script async src="https://www.googletagmanager.com/gtag/js?id=TODO"></script>-->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'TODO');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">OpenCity3D 🏙️<br />
+            <p class="title is-3 publication-title">3D Urban Scene Understanding with Vision-Language Models</p>
+          </h1>          
+
+          <h1 class="title is-4" style="color: #5c5c5c;">WACV 2025</h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Valentin Bieri</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="">Marco Zamboni</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Nicolas S. Blumer</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Qingxuan Chen</a><sup>1,2</sup>,
+            </span>
+            <br />
+            <span class="author-block">
+              <a href="">Francis Engelmann</a><sup>3</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="margin-right: 1em;"><sup>1</sup>ETH Zürich</span>
+            <span class="author-block" style="margin-right: 1em;"><sup>2</sup>University of Zurich</span>
+            <span class="author-block" style="margin-right: 1em;"><sup>3</sup>Stanford University</span></br>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="static/pdf/opencity3d.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="TODO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/opencity3d/opencity3d"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+    
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/teaser.jpg" class="center"/>
+      <br><br>
+      <h2 class="subtitle has-text-centered">
+      <strong>OpenCity3D</strong> is a zero-shot approach for open-vocabulary 3D urban scene understanding.
+    </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The rise of 2D vision-language models (VLMs) has enabled new possibilities for language-driven 3D scene understanding tasks.
+Existing works focus on indoor scenes, or autonomous driving scenarios and typically validate against a pre-defined set of semantic object classes.
+In this work, we analyze the capabilities of vision-language models for large-scale urban 3D scene understanding,
+and propose new applications of VLMs that directly operate on aerial 3D reconstructions of cities. 
+In particular, we address higher-level 3D scene understanding tasks such as population density, building age, property prices, crime rate, and noise pollution.
+Our analysis reveals surprising zero-shot and few-shot performance of VLMs in urban environments.          
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Explanatory Video</h2>
+        <video controls poster="static/images/explanatory_video_poster.jpeg">
+          <source src="static/videos/poster_session.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div> -->
+</section>
+
+<section class="section">
+  <!-- <div class="container is-max-desktop"> -->
+
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+       
+        <h2 class="title is-3">Qualitative results</h2>
+    
+      <br>
+        <div class="content has-text-justified">
+          <p>
+            Using <i>Opencity3D</i> you can perform free form queries which capture uncommon objects, affordances, object properties, geometry, materials, and states.
+          </p>
+        </div>
+        <h2 class="title is-4">Uncommon objects</h2>
+      </div>
+    </div> -->
+
+
+
+    <!-- <div class="columns is-centered"> -->
+
+      <!-- Affordances 1 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/footrest.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >footrest</i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+      <!--/ Affordances 1 -->
+
+      <!-- Affordances 2 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/angel.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >angel</i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+    <!--/ Affordances 2 -->
+  <!-- </div>
+
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+          <h2 class="title is-4">Affordances</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered"> -->
+
+      <!-- Affordances 1 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/aff1.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >“sit”</i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+      <!--/ Affordances 1 -->
+
+      <!-- Affordances 2 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/aff2.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >“wash”</i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+    <!--/ Affordances 2 -->
+  </div>
+
+
+
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+          <h2 class="title is-4">Object properties</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+
+      <!-- Affordances 1 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/color1.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >“an orange pillow”</i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+      <!--/ Affordances 1 -->
+
+      <!-- Affordances 2 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/color2.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >“a yellow pillow”</i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+    <!--/ Affordances 2 -->
+  </div>
+
+
+
+
+  <div class="container is-max-desktop">
+<!-- 
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+          <h2 class="title is-4">Geometry</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered"> -->
+
+      <!-- Affordances 1 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/geo1.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >“a circular table” </i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+      <!--/ Affordances 1 -->
+
+      <!-- Affordances 2 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/geo2.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >“a rectangular table” </i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+    <!--/ Affordances 2 -->
+  </div>
+
+
+
+  <div class="container is-max-desktop">
+
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+          <h2 class="title is-4">Materials</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered"> -->
+
+      <!-- Affordances 1 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/mat1.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >“a leather chair” </i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+      <!--/ Affordances 1 -->
+
+      <!-- Affordances 2 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/mat2.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >“a fabric chair” </i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+    <!--/ Affordances 2 -->
+  </div>
+
+
+
+
+
+  <div class="container is-max-desktop">
+
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+          <h2 class="title is-4">States</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered"> -->
+
+      <!-- Affordances 1 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/state1.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >“a full garbage bin” </i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+      <!--/ Affordances 1 -->
+
+      <!-- Affordances 2 -->
+      <!-- <div class="column">
+        <div class="content">
+          
+          <img src="static/images/state2.jpeg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >“an empty garbage bin” </i>
+            </p>
+          </center>
+        </div>
+      </div> -->
+    <!--/ Affordances 2 -->
+  </div>
+
+
+
+<h2 class="title is-3">BibTeX</h2>
+<pre><code>
+@inproceedings{TODO}</code></pre>
+
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            It borrows the source code of <a href="https://github.com/nerfies/nerfies.github.io">this website</a> and its <a href="https://github.com/OpenMask3D/openmask3d.github.io">adaptation</a>.
+            We would like to thank Utkarsh Sinha and Keunhong Park.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
