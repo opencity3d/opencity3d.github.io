@@ -62,14 +62,14 @@
               <a href="">Marco Zamboni</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="">Nicolas S. Blumer</a><sup>1,2</sup>,
+              <a href="">Nicolas S. Blumer</a><sup>1, 2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://jerryisqx.github.io/">Qingxuan Chen</a><sup>1,2</sup>,
+              <a href="https://jerryisqx.github.io/">Qingxuan Chen</a><sup>1, 2</sup>,
             </span>
             <br />
             <span class="author-block">
-              <a href="https://francisengelmann.github.io">Francis Engelmann</a><sup>3</sup>,
+              <a href="https://francisengelmann.github.io">Francis Engelmann</a><sup>1, 3</sup>,
             </span>
           </div>
 
@@ -92,7 +92,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="TODO"
+                <a href="."
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -264,44 +264,81 @@ Our analysis reveals surprising zero-shot and few-shot performance of VLMs in ur
 
   <div class="container is-max-desktop">
 
-    <!-- <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-          <h2 class="title is-4">Object properties</h2>
+          <h2 class="title is-3">Prompt-based interaction with urban scenes</h2>
       </div>
-    </div> -->
+    </div>
+    <br>
+    <div class="columns is-centered">
+
+      <div class="column">
+        <div class="content">
+          
+          <img src="static/images/pipeline-graph-1.jpg"
+            class="interpolation-image">
+            <center>
+            <p>
+              <i >Illustration of the OpenCity3D pipeline. We first render multi-perspective images from aereal 3D reconstructions, then compute
+                pixel-wise hierarchical visual-language features. Finally, we project them back to the mesh to enable language queries on the scene.</i>
+            </p>
+          </center>
+        </div>
+      </div>
+  </div>
+
+  
+  <br>
+  <br>
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+          <h2 class="title is-3">Zero-shot inference of abstract properties</h2>
+      </div>
+    </div>
+    
+    <div class="content has-text-centered">
+      <p>
+        Using <i>Opencity3D</i> you can estimate abstract properties by comparing the point-wise similarity to positive and negative prompts. That is, we can e.g. compute a building age score from the ratio of the similarities
+        to <i>"modern building"</i> and <i>"old
+        building"</i>. 
+      </p>
+    </div>
 
     <div class="columns is-centered">
 
-      <!-- Affordances 1 -->
-      <!-- <div class="column">
+      <div class="column">
         <div class="content">
           
-          <img src="static/images/color1.jpeg"
+          <img src="static/images/age_rotterdam.png"
             class="interpolation-image">
             <center>
             <p>
-              <i >“an orange pillow”</i>
+              <i >Zero-shot predicted age (left) vs. ground truth
+                construction years (right) in Rotterdam.</i>
             </p>
           </center>
         </div>
-      </div> -->
-      <!--/ Affordances 1 -->
-
-      <!-- Affordances 2 -->
-      <!-- <div class="column">
-        <div class="content">
-          
-          <img src="static/images/color2.jpeg"
-            class="interpolation-image">
-            <center>
-            <p>
-              <i >“a yellow pillow”</i>
-            </p>
-          </center>
-        </div>
-      </div> -->
-    <!--/ Affordances 2 -->
+      </div>
   </div>
+  <br>
+  <div class="columns is-centered">
+
+    <div class="column">
+      <div class="content">
+        
+        <img src="static/images/prices-detroit-1.jpg"
+          class="interpolation-image">
+          <center>
+          <p>
+            <i >Zero-shot predicted (left) vs. ground truth (right) prices of sold homes in Detroit.</i>
+          </p>
+        </center>
+      </div>
+    </div>
+</div>
+
 
 
 
