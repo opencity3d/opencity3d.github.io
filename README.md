@@ -16,7 +16,7 @@
   </h3>
 </p>
   
-<a href=""><img alt="arXiv" src="https://img.shields.io/badge/arXiv-badge"> </a>
+<a href="https://www.arxiv.org/abs/2503.16776"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-badge"> </a>
 
 <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
 <!-- <a href="https://hydra.cc/"><img alt="Config: Hydra" src="https://img.shields.io/badge/Config-Hydra-89b8cd"></a> -->
